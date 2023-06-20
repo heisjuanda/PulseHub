@@ -1,0 +1,177 @@
+.container-form {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: black;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background: white;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: black;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.form-quiz {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5vw;
+    border: 2px solid black;
+    color: black;
+    font-family: 'Roboto';
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.900);
+}
+
+.form-title>h4 {
+    font-size: clamp(20px,2vw,25px);
+}
+
+.form-options {
+    margin-bottom: 1.2%;
+}
+
+.form-options>label{
+    font-size: clamp(15px,2vw,20px);
+    cursor: pointer;
+}
+
+.form-options>input{
+    font-size: clamp(15px,2vw,20px);
+}
+
+.send-form {
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+}
+
+.send-form>button {
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 1.5vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-form>button:hover {
+    color: white;
+    background-color: black;
+}
+
+.modal {
+  position: fixed;
+  z-index: 4;
+  top: 2%;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  font-family: 'Roboto';
+}  
+
+.result-form {
+  position: relative;
+  border-radius: 2vw;
+  padding: 3%;
+  width: 25vw;
+  min-width: 160px;
+  background-color: rgba(255, 255, 255, 0.589);
+  backdrop-filter: blur(2px);
+}
+
+.result-form>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.result-form>div>h2 {
+  font-size: clamp(20px,2vw,22px);
+}
+
+.result-form>div>p {
+  font-size: clamp(20px,2vw,22px);
+}
+
+.result-form>button {
+  position: absolute;
+  font-family: 'Audiowide', cursive;
+  top: 3%;
+  right: 3%;
+  border: none;
+  background-color: transparent;
+  font-size: clamp(20px,3vw,30px);;
+  cursor: pointer;
+  color: black;
+}
+
+.bad-answer, .correct-answer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bad-question {
+  color: red;
+  font-size: clamp(25px,3vw,35px);
+  margin-bottom: 4%;
+}
+
+.correct-question {
+  color: green;
+  font-size: clamp(25px,3vw,35px);
+  margin-bottom: 4%;
+}

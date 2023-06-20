@@ -1,0 +1,165 @@
+.leg-section {
+    border: 1px solid transparent;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.leg-section__imgs {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.leg-img-container {
+    position: relative;
+    width: 60%;
+    margin-bottom: 3%;
+    margin-inline: auto;
+}
+
+.leg-img-container>img {
+    width: 28vw;
+    /*min-width: 148px;*/
+}
+
+#femoral,
+#safena-magna,
+#poplitea,
+#descendente-de-la-rodilla,
+#tibial-posterior,
+#femoral-profunda,
+#circunfleja-femoral,
+#recurrente-tibial-anterior,
+#inferior-medial-de-la-rodilla,
+#peronea,
+#safaena-menor,
+#digital-dorsal {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#femoral {
+    top: 5vw;
+    left: 11.5vw;
+    flex-direction: row-reverse;
+}
+
+#safena-magna {
+    top: 15vw;
+    left: 4.3vw;
+    flex-direction: row-reverse;
+}
+
+#poplitea {
+    top: 65vw;
+    right: 17vw;
+}  
+
+#descendente-de-la-rodilla {
+    top: 63vw;
+    left: 2.3vw;
+    flex-direction: row-reverse;
+}
+
+#tibial-posterior {
+    top: 96vw;
+    right: 13.3vw;
+}
+
+#femoral-profunda {
+    top: 13vw;
+    right: 11.7vw;
+}
+
+#circunfleja-femoral {
+    top: 20vw;
+    right: 3.8vw;
+}
+
+#recurrente-tibial-anterior {
+    top: 75vw;
+    right: 2vw;
+}
+
+#inferior-medial-de-la-rodilla {
+    top: 88.2vw;
+    left: 5.3vw;
+    flex-direction: row-reverse;
+}
+
+#peronea {
+    top: 100vw;
+    right: 14.6vw;
+}
+
+#safaena-menor {
+    bottom: 20vw;
+    right: 9.9vw;
+}
+
+#digital-dorsal {
+    bottom: 7vw;
+    right: 9vw;
+}
+
+#femoral>img,
+#safena-magna>img,
+#poplitea>img,
+#descendente-de-la-rodilla>img,
+#tibial-posterior>img,
+#femoral-profunda>img,
+#circunfleja-femoral>img,
+#recurrente-tibial-anterior>img,
+#inferior-medial-de-la-rodilla>img,
+#peronea>img,
+#safaena-menor>img,
+#digital-dorsal>img {
+    width: 7vw;
+    margin-top: 3%;
+}
+
+#femoral>p,
+#safena-magna>p,
+#poplitea>p,
+#descendente-de-la-rodilla>p,
+#tibial-posterior>p,
+#femoral-profunda>p,
+#circunfleja-femoral>p,
+#recurrente-tibial-anterior>p,
+#inferior-medial-de-la-rodilla>p,
+#peronea>p,
+#safaena-menor>p,
+#digital-dorsal>p {
+    color: white;
+    font-size: 1.3vw/*clamp(12px,1vw,20px)*/;
+    font-family: 'Roboto';
+}
+
+@media screen and (max-width:550px) {
+    .leg-section__imgs {
+        margin-top: 15vw;
+        min-height: 130vh;
+    }
+    
+    .leg-img-container {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .leg-section__imgs {
+        margin-top: 25vw;
+    }
+    
+    .leg-img-container {
+        transform: scale(1.4);
+    }
+}

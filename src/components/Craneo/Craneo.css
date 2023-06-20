@@ -1,0 +1,190 @@
+.craneo-section {
+    border: 1px solid transparent;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.craneo-section__imgs {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.imgs-container {
+    position: relative;
+    width: 60%;
+    margin-bottom: 3%;
+    margin-inline: auto;
+}
+
+.imgs-container>img {
+    width: 28vw;
+    /*min-width: 148px;*/
+}
+
+#seno-sagital-superior,
+#parietal-posterior,
+#cerebral-media,
+#facial,
+#yugular-externa,
+#seno-transverso,
+#profunda-cervical,
+#angular,
+#labial-superior,
+#seno-sagital-inferior,
+#seno-sigmoideo,
+#seno-transverso1,
+#yugular-interna,
+#vertebral {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#seno-sagital-superior {
+    top: 0;
+    left: 29.8vw;
+}
+
+#parietal-posterior {
+    top: 4.2vw;
+    left: 33.8vw;
+}
+
+#cerebral-media {
+    top: 11vw;
+    left: 37vw;
+}
+
+#facial {
+    top: 23vw;
+    left: 35.5vw;
+}
+
+#yugular-externa {
+    top: 38vw;
+    left: 37.6vw;
+}
+
+#seno-transverso{
+    top: 11.5vw;
+    left: 37vw;
+}
+
+#profunda-cervical {
+    top: 30vw;
+    left: 37.5vw;
+}
+
+#angular {
+    top: 12.5vw;
+    left: 7vw;
+    flex-direction: row-reverse;
+}
+
+#labial-superior {
+    top: 18.1vw;
+    left: 5vw;
+    flex-direction: row-reverse;
+}
+
+#seno-sagital-inferior {
+    top: 2.7vw;
+    left: 12vw;
+    flex-direction: row-reverse;
+}
+
+#seno-sigmoideo {
+    top: 19vw;
+    left: 39vw;
+}
+
+#seno-transverso1 {
+    top: 16.3vw;
+    left: 37vw;
+}
+
+#yugular-interna {
+    top: 34vw;
+    left: 35.5vw;
+}
+
+#vertebral {
+    top: 24.5vw;
+    left: 33vw;
+}
+
+#seno-sagital-superior>img,
+#parietal-posterior>img,
+#cerebral-media>img,
+#facial>img,
+#yugular-externa>img,
+#seno-transverso>img,
+#profunda-cervical>img,
+#angular>img,
+#labial-superior>img,
+#seno-sagital-inferior>img,
+#seno-sigmoideo>img,
+#seno-transverso1>img,
+#yugular-interna>img,
+#vertebral>img {
+    width: 7vw;
+    margin-top: 3%;
+}
+
+#seno-sagital-superior>p,
+#parietal-posterior>p,
+#cerebral-media>p,
+#facial>p,
+#yugular-externa>p,
+#seno-transverso>p,
+#profunda-cervical>p,
+#angular>p,
+#labial-superior>p,
+#seno-sagital-inferior>p,
+#seno-sigmoideo>P,
+#seno-transverso1>p,
+#yugular-interna>p,
+#vertebral>p {
+    color: white;
+    font-size: 1.3vw/*clamp(12px,1vw,20px)*/;
+    font-family: 'Roboto';
+}
+
+@media screen and (max-width:532px) {
+    .imgs-container {
+        display: grid;
+        place-items: center;
+        margin-bottom: 5vw;
+        transform: scale(1.1);
+    }
+    .craneo-section__imgs {
+        margin-top: 2vmax;
+    }
+}
+
+@media screen and (max-width:505px) {
+    .imgs-container {
+        margin-bottom: 10vw;
+        transform: scale(1.2);
+    }
+    .craneo-section__imgs {
+        margin-top: 4vmax;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .imgs-container {
+        margin-bottom: 28vw;
+        transform: scale(1.6);
+    }
+    .craneo-section__imgs {
+        margin-top: 17vmax;
+    }
+}

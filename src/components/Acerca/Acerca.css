@@ -1,0 +1,46 @@
+.acerca-title {
+    width: 100%;
+    text-align: center;
+}
+
+.acerca-title>h2 {
+    font-size: clamp(30px,4vw,40px);
+    color: white;
+    font-family: 'Roboto';
+}
+
+.acerca-content {
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.content__group>h3 {
+    color: white;
+    font-size: clamp(20px,3vw,30px);
+    font-family: 'Roboto';
+}
+
+.group-list {
+    color: white;
+    list-style: disc;
+    font-size: clamp(18px,2.5vw,25px);
+    font-family: 'Roboto';
+}
+
+.content__objective {
+    color: white;
+    font-size: clamp(16px, 2vw, 20px);
+    font-family: 'Roboto';
+    margin-top: 1%;
+}
+
+@media screen and (max-width:420px) {
+    .acerca-content {
+        margin-top: 10%;
+        gap: 10%;
+    }
+}
