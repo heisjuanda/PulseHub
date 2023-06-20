@@ -1,3 +1,4 @@
+
 # PulseHub
 
 ### Acerca 
@@ -10,7 +11,23 @@ Maria Jose Contreras
 Stephanny Maillith Valero
 Lunna Liseth Gomez Cordoba
 ````
+
 ### Tecnologías usadas
 <li>
-    hola
+    React Versión 18.2.0
+</li>
+<li>
+    Lottie Versión 2.4.0
+</li>
+<li>
+    Netlify Versión 11.8.3
+</li>
+<li>
+    HTML Version 5
+</li>
+<li>
+    Css Version 3
+</li>
+<li>
+    JavaScript Version ES2020+
 </li>
