@@ -10,3 +10,7 @@ Maria Jose Contreras
 Stephanny Maillith Valero
 Lunna Liseth Gomez Cordoba
 ````
+### Tecnologías usadas
+<li>
+    hola
+</li>
